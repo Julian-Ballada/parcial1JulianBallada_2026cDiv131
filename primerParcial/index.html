@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+    <title>parcial 1</title>
+</head>
+
+<body>
+    <header>
+        <p>Parcial 1 Division 131</p>
+    </header>
+    <main>
+        <h1 id="titulo">Users</h1>
+        <hr>
+        <section id="seccion-buscador">
+            <div id="parte-inputs">
+                <div id="labels">
+                    <label><input type="radio" name="estado" value="active">Active</label>
+                    <label><input type="radio" name="estado" value="inactive">Inactive</label>
+                    <label><input type="radio" name="estado" value="all">All</label>
+                </div>
+                <input type="text" name="buscador" id="buscador" placeholder="search users">
+            </div>
+            <div id="botones">
+                <button class="boton">CREATE</button>
+                <button class="boton">DEACTIVATE</button>
+                <button class="boton">RESET PASSWORD</button>
+            </div>
+
+        </section>
+        <section>
+            <div id="users-container">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Julian Ballada</p>
+    </footer>
+</body>
+</html>
