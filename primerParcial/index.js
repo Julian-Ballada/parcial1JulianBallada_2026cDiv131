@@ -13,10 +13,6 @@ const contenedorUsuarios = document.getElementById("users-container");
 const buscador = document.getElementById("buscador");
 
 function renderizarTabla(lista){
-    if (lista.length === 0){
-        contenedorUsuarios.innerHTML = `<p>No se encontraron usuarios</p>`;
-        return;
-    }
     let filas = "";
     lista.forEach((u, indice) => {
         let clase = "fila"
@@ -56,7 +52,7 @@ buscador.addEventListener("keyup", () =>{
     u.username.toLowerCase().includes(personaBuscada) || 
     u.email.toLowerCase().includes(personaBuscada));
 
-    if (usuariosGuardados.length === 0){
+    if (personasFiltradas.length === 0){
         contenedorUsuarios.innerHTML = `<p>No se encontraron usuarios</p>`;
     }else{
         renderizarTabla(personasFiltradas);
